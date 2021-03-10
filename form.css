@@ -1,0 +1,28 @@
+* {
+    border: 1px black dashed;
+    padding: 10px;
+    margin: 20px;
+}
+
+body, div.container-fuid, div.row {
+    border: 1px grey dashed;
+    padding: 10px;
+    margin: 10px;
+}
+form {
+	padding: 50px 25px;
+	/*background-image: url('https://www.tokkoro.com/picsup/2828041-digital-art___abstract-wallpapers.jpg');*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 100%;
+	background-color: #E0E0D6;
+}
+input, button {
+    cursor: pointer;
+}
+label {
+    border: 1px black dashed;
+    cursor: pointer;
+    width: 300px !important; 
+}
+

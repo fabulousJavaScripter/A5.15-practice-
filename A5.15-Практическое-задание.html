@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru" 
+      style="
+      background-image: url(https://avatars.mds.yandex.net/get-zen_doc/2746214/pub_5f622cb6d3d25d774520b846_5f622fb2830c8f70d099e730/scale_1200);    color: #fff;		
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: 100% 100%;
+	  background-color: #fff;">
+<head>
+<!-- ------------------------------------------------------------------------------------------------- -->
+  <meta name="robots" content="index, follow">
+<!-- ------------------------------------------------------------------------------------------------- -->
+  <!-- SEO -->
+  <title></title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link href="css/form.css" rel="stylesheet" type="text/css">
+<!-- ------------------------------------------------------------------------------------------------- -->
+  <!-- SCRIPTS -->
+  <!-- BOOTSTRAP JS -->
+  <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=UJbCfHTrFcQUYYaCxXVfUTB5-XnrLCWQOWAyksX4FTf9JmNjCRkhlWUp-GRFX-AaivO1A7hoJi3Jzkl9volEzAMeDQZJ6an6ruicWsXyJJMQIya0NBgc9zSvG2aFFHHzj7aX7jrSQL77HeY-9zifmmuXW7GDgjI317yeBewoQRtDN4LBkPugQWYhLOOKBrgm" charset="UTF-8"></script><script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=wWt22GJggKQniyDsEVaz3adV9UGByVjSRlVWZyN48htPQc8b5bO5GJJ7mCpHTyGOOE4Foa-fsUthaINusOJfLQ" charset="UTF-8"></script><script src="js/bootstrap.js" type="text/javascript"></script>
+  <!--  JQ FULL LIBRARY  -->
+  <!-- This is a full version library of 1.9.2 vers. with UI core, Interactions, Widgets and Effects included -->
+  <script src="js/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
+  <script src="js/jquery-1.8.3.js" type="text/javascript"></script>
+  <script src="js/jquery-ui-1.9.2.custom.js" type="text/javascript"></script>
+  <!--  JQ TABS  -->
+  <script src="js/jquery-ui-1.9.2.tabs.min.js" type="text/javascript"></script>
+    
+  <!-- Tabs Script -->
+    <script>
+	  $( function() {
+	    $( "#tabs" ).tabs();
+	  } );
+    </script>
+    <script src="skill-factory/js/a5-15.js" type="text/javascript"></script>
+<!-- ------------------------------------------------------------------------------------------------- -->
+  
+</head>
+  <body style="width: 50%; margin: 0 auto; background-color: rgba(255,255,255,.85);">
+	
+    <h1 style="color: black;">Дополни сказку пропущенными словами!</h1>
+	<p style="font-size: 120%; color: black;">
+	    Жили-были __1__ да __2__. Была у них __3__. Снесла __3__ __4__, не простое - золотое. __1__ бил, бил - не разбил. __2__ била, била - не разбила. __5__ бежала, __6__ задела, __4__ упало и разбилось. __1__ плачет, __2__ плачет, а __3__ кудахчет: ____________!
+	</p>
+	
+	<div class="container-fuid"> 
+		<div class="row">
+		  <form method="GET" action="mailto:info@ingos-ins.ru" enctype="text/plain" autocomplete> 
+             <fieldset>
+                <legend  style="color: black;" >Заполните пропущенные слова сказки:</legend>
+                    
+                    <!-- Лейбл нужно связать с соответствующим полем. 
+                    Это можно сделать двумя способами. Рассмотрим их на примере уже знакомой вам формы.
+                    Первый способ — обернуть поле в лейбл: -->                
+                    <label style="color: black;" for="login">Слово №1</label>
+                    <input id="word1" type="text" name="var1" required placeholder="введите слово" />
+                    <br>
+                    
+                    <label style="color: black;"  for="login">Слово №2</label>
+                    <input id="word2" type="text" name="var2" required placeholder="введите слово" />
+                    <br>
+                    
+                    <label style="color: black;"  for="login">Слово №3</label>
+                    <input id="word3" type="text" name="var3" required placeholder="введите слово" />
+                    <br>
+                    
+                    <label style="color: black;"  for="login">Слово №4</label>
+                    <input id="word4" type="text" name="var4" required placeholder="введите слово" />
+                    <br>
+                    
+                    <label style="color: black;"  for="login">Слово №5</label>
+                    <input id="word5" type="text" name="var5" required placeholder="введите слово" />
+                    <br>
+                    
+                    <label for="login">Слово №6</label>
+                    <input id="word6" type="text" name="var6" required placeholder="введите слово" />
+                    <br>
+                    
+                    <label  style="color: black;" for="login">Что сказала курочка?</label>
+                    <input id="speech" type="text" name="speech" required placeholder="ваш вариант" />
+                    <br>
+                    <hr style="width: 100%; height: 1px; background-color: gray; padding: 0; margin: 0; border: 2px solid green">
+                    <button id="button1" type="button" style="margin-right: 25px;" value="Кпопка?">Шаг №1 "Создать новый текст"</button>
+                    <br>
+                    <button id="button2" type="button" value="Кпопка?">Шаг №2 "Заменить прокуски на мои слова!</button>
+                    <br>
+            
+             </fieldset>
+</form>
+
+<!-- <pre style="color: black;">
+    {"text":[
+        "Жили-были {var1} да {var2}",
+        "Была у них {var3}",
+        "Снесла {var3} {var4}, не простое - золотое",
+        "- {var1} бил, бил - не разбил",
+        "- {var2} била, била - не разбила",
+        "{var5} бежала, {var6} задела, {var4} упало и разбилось.",
+        "{var1} плачет, {var2} плачет, а {var3} кудахчет:","{speech}"
+      ]
+    }
+</pre> 
+
+-->
+
+		</div>
+	</div>
+<!-- ------------------------------------------------------------------------------------------------- -->
+  </body>
+</html>
